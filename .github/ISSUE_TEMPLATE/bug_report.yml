@@ -1,0 +1,37 @@
+name: Bug report
+description: Something in the skill or the KiCad toolkit is wrong or broken
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill guidance (SKILL.md / references)
+        - Calculator (pcb_calc.py)
+        - KiCad toolkit (build / route / verify / fab / images)
+        - Packaging / install
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Prompt or command, spec file (if you can share it), and the full printed output.
+      render: text
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: "skill v3.0.0, KiCad 7.0.11, Freerouting 1.9.0, Java 21, Ubuntu 24.04"
+  - type: textarea
+    id: source
+    attributes:
+      label: For wrong engineering claims — correct value and source
+      description: Datasheet, standard or vendor document, with section/page.

@@ -1,0 +1,21 @@
+** Drc report for /tmp/example/Example.kicad_pcb **
+** Created on 2026-11-25 10:00:00 **
+
+** Found 2 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(101.3700 mm, 108.5000 mm): Reference 'C3'
+[starved_thermal]: Thermal relief connection to zone incomplete (zone min spoke count 2; actual 1)
+    Rule: zone 'GND_F.Cu'; Severity: warning
+    @(82.0000 mm, 96.5000 mm): Pad S1 [GND] of J1 on F.Cu
+    @(80.0000 mm, 90.0000 mm): Zone [GND] on F.Cu
+
+** Found 0 Footprint errors **
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; Severity: error
+    @(103.2500 mm, 97.1000 mm): Pad 12 [SPI_CS] of U3 on F.Cu
+    @(108.6000 mm, 99.4000 mm): Pad 8 [SPI_CS] of U1 on F.Cu
+
+** End of Report **

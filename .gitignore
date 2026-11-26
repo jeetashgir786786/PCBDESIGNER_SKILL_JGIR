@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Build output
+dist/
+*.zip
+
+# KiCad / Freerouting working files
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.dsn
+*.ses
+*.rules
+logs/
+*.zones.json
+*.work.rpt
+*.best.kicad_pcb
+*.pre.kicad_pcb
+*.overall.kicad_pcb
+freerouting.jar
+
+# OS
+.DS_Store
+Thumbs.db

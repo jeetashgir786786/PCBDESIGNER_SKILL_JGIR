@@ -1,0 +1,21 @@
+[project]
+name = "pcbdesigner-skill-jgir"
+version = "3.0.0"
+description = "PCB engineering Agent Skill for Claude with a KiCad automation toolkit (spec -> routed, verified, JLCPCB-ready board)."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Jeetash Goswami" }]
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 140
+target-version = "py310"
+
+[tool.ruff.lint]
+# correctness-focused: syntax errors, undefined names, unused imports/variables, bad comparisons
+select = ["E9", "F63", "F7", "F82", "F401", "F811", "F841", "E711", "E712"]
+per-file-ignores = { "pcbdesigner-skill-jgir/scripts/kicad_auto/examples/*" = ["F401"] }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

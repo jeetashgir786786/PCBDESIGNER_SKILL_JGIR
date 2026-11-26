@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest a new capability, reference topic or toolkit feature
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources / references
+      description: Standards, app notes or tools the change should be based on.

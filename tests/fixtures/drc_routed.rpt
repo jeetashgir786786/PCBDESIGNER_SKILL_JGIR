@@ -1,0 +1,13 @@
+** Drc report for /tmp/pipe2/USB_UART_Bridge.kicad_pcb **
+** Created on 2026-11-25 00:12:22 **
+
+** Found 1 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(101.3700 mm, 108.5000 mm): Reference 'C3'
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
